@@ -6,6 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import Hero from "./components/sections/Hero";
 import Skills from "./components/sections/Skills"
 import Experience from "./components/sections/Experience";
+import Education from "./components/sections/Education";
 
 
 
@@ -17,6 +18,7 @@ function App() {
         <Hero/>
         <Skills/>
         <Experience/>
+        <Education/>
       </BrowserRouter>
     </ThemeProvider>
   );
