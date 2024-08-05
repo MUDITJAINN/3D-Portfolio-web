@@ -122,7 +122,7 @@ const Contact = () => {
         form.current,
         process.env.REACT_APP_EMAILJS_USER_ID
       )
-      .then(
+      .then (
         (result) => {
           alert("Message Sent");
           form.current.reset(); // Reset the form after successful submission
