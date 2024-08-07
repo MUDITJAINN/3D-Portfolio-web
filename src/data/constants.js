@@ -224,7 +224,7 @@ export const skills = [
 export const experiences = [
   {
     id: 3,
-    img: "D:/3d-portfolio-web/src/images/SS AgriQulture logo.jpeg",
+    img: "https://trademaklogos.s3.ap-south-1.amazonaws.com/6175073.jpeg",
     role: "Fullstack Internship",
     company: "SS Agriqulture Innovations",
     date: "September 2023 - Janaury 2024",
@@ -238,11 +238,11 @@ export const experiences = [
       "Figma",
       "MySQl",
     ],
-    doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/1691181448873.jpeg?alt=media&token=ee85eb8f-7247-43cd-9a1d-ce9f58ea62a6",
+    doc: "",
   },
   {
     id: 4,
-    img: "src/images/Anivale logo.jpeg",
+    img: "https://anivale.com/nav-logo.png",
     role: "Flutter Intern",
     company: "Anivale Private Limited",
     date: "Mar 2024 - Present",
@@ -254,20 +254,20 @@ export const experiences = [
       "Figma",
     ],
   },
-  {
-    id: 5,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/girlScript.jpeg?alt=media&token=e656a621-cf3c-4230-bf0f-e74b4cec6035",
-    role: "Open Source Contributor ",
-    company: "GirlScript Summer of Code",
-    date: "May 2023 - Present",
-    desc: "Contributed to different open-source projects and learn from industry experts",
-  },
+  // {
+  //   id: 5,
+  //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/girlScript.jpeg?alt=media&token=e656a621-cf3c-4230-bf0f-e74b4cec6035",
+  //   role: "Open Source Contributor ",
+  //   company: "GirlScript Summer of Code",
+  //   date: "May 2023 - Present",
+  //   desc: "Contributed to different open-source projects and learn from industry experts",
+  // },
 ];
 
 export const education = [
   {
     id: 0,
-    img: "",
+    img: "https://upload.wikimedia.org/wikipedia/commons/2/2e/DIT_University_Dehradun_Logo.jpg",
     school: "Dheradun Institute Of Technology, Dheradun",
     date: "Aug 2021 - Aug 2025",
     grade: "8.3 CGPA",
@@ -276,7 +276,7 @@ export const education = [
   },
   {
     id: 1,
-    img: "",
+    img: "https://d3bat55ebwjhsf.cloudfront.net/schools/logos/user_generic_school_user/289845c6-e593-4388-95a5-f14337568b0d-065ab038-4b_0dBVPKu.webp",
     school: "Siddhartha Public School,Delhi",
     date: "Apr 2019 - Apr 2021",
     grade: "82.2%",
@@ -285,7 +285,7 @@ export const education = [
   },
   {
     id: 2,
-    img: "",
+    img: "https://www.cjcsbaraut.com/img/web-logo.png",
     school: "Christu Jyothi Convent SR SEC School, Baraut",
     date: "Apr 2007 - Apr 2019",
     grade: "84.8%",
@@ -297,13 +297,13 @@ export const education = [
 export const projects = [
   {
     id: 2,
-    title: "Brain Tumor Detection",
-    date: "Jan 2023 - Mar 2023",
+    title: "Email Spam Detector",
+    date: "Jan 2024 - Mar 2024",
     description:
-      "Preprocessed and augmented the dataset to improve model accuracy, trained the model, created API using model and Python, and used React web app for the project's front end. Achievements: Achieved an accuracy of 99.2% to accurately detect brain tumors from medical images.",
+      "Preprocessed and augmented the dataset to improve model accuracy, trained the model, created API using model and Python, and used React web app for the project's front end. Achievements: Achieved an accuracy of 99.2% to accurately Sms Spam",
     image:
-      "https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png",
-    tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
+      "",
+    tags: ["Python", "React"],
     category: "machine learning",
     github: "",
     webapp: "",
@@ -324,28 +324,42 @@ export const projects = [
   },
   {
     id: 5,
-    title: "Todo Hive App",
-    date: "Jun 2021",
+    title: "Todo Hive",
+    date: "Mar 2023 - June 2023",
     description:
-      " A Todo Web App made with React JS, Redux, and Material UI. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the tasks and can create a new task. It has a calendar where users can see all the tasks on a particular date. It has a search bar where users can search for a particular task.",
+      "A Flutter application for managing a to-do list using Hive as the local database. You can create as many as tasks you want and all task/data will be stored in your local device storage.",
     image:
-      "https://camo.githubusercontent.com/84ac6ab6f378348ef28d8184062b7e9e3511a1252ae3966eaa49e8e998f732a7/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f746f646f2d6170702d63386331392e61707073706f742e636f6d2f6f2f53637265656e73686f74253230283938292e706e673f616c743d6d6564696126746f6b656e3d33643335646366322d626666322d343730382d393031632d343232383866383332386633",
-    tags: ["React Js", "Local Storage", "AWS Auth", "Node JS"],
-    category: "web app",
-    github: "",
+      "",
+    tags: ["Flutter","Hive","Dart"],
+    category: "android app",
+    github: "https://github.com/MUDITJAINN/TO-DO_HIVE",
     webapp: "",
   },
   {
     id: 7,
-    title: "Quiz App",
-    date: "Dec 2020 - Jan 2021",
+    title: "2D Runner",
+    date: "Mar 2024 - Apr 2024",
     description:
-      "A android quiz app made with Java and Firebase. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the quiz categories and can create a new quiz. It has a leaderboard where users can see the top 10 scorers. It has a search bar where users can search for a particular quiz.",
+      "A Simple 2D Game implemented in Java. The game features a player controlled character navigating through enemies to reach the end.",
     image:
-      "https://github-production-user-asset-6210df.s3.amazonaws.com/64485885/239726262-c1b061d1-d9d0-42ef-9f1c-0412d14bc4f6.gif",
-    tags: ["Java", "Android Studio", "Firebase", "Google Auth"],
+      "https://raw.githubusercontent.com/MUDITJAINN/2D-Java-game/main/sprites/player.gif",
+    tags: ["Java", "Eclipse"],
     category: "android app",
-    github: "",
+    github: "https://github.com/MUDITJAINN/2D-Java-game",
+    webapp: "",
+  },
+  
+  {
+    id: 7,
+    title: "3D Portfolio",
+    date: "Jun 2024 - Aug 2024",
+    description:
+      "I have developed a 3D portfolio website to showcase my skills, projects, and experience. This interactive site leverages cutting-edge web technologies to provide an immersive user experience.",
+    image:
+      "",
+    tags: ["React","Three.js","EmailJS","GithubPages"],
+    category: "web app",
+    github: "https://github.com/MUDITJAINN/3D-Portfolio-web",
     webapp: "",
   },
 ];
