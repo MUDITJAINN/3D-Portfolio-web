@@ -26,8 +26,8 @@ const Body = styled.div`
 
 const Role = styled.div`
   font-size: 18px;
-  font-weight: 600px;
-  color: ${({ theme }) => theme.text_primary + 99};
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_primary || "#fff"};
   @media only screen and (max-width: 768px) {
     font-size: 14px;
   }
@@ -35,8 +35,8 @@ const Role = styled.div`
 
 const Company = styled.div`
   font-size: 14px;
-  font-weight: 500px;
-  color: ${({ theme }) => theme.text_secondary + 99};
+  font-weight: 500;
+  color: ${({ theme }) => theme.text_secondary || "#ddd"};
   @media only screen and (max-width: 768px) {
     font-size: 12px;
   }
@@ -44,8 +44,8 @@ const Company = styled.div`
 
 const Date = styled.div`
   font-size: 12px;
-  font-weight: 400px;
-  color: ${({ theme }) => theme.text_secondary + 80};
+  font-weight: 400;
+  color: ${({ theme }) => theme.text_secondary || "#ccc"};
 
   @media only screen and (max-width: 768px) {
     font-size: 10px;
@@ -56,27 +56,33 @@ const Description = styled.div`
   width: 100%;
   font-size: 15px;
   font-weight: 400;
-  color: ${({ theme }) => theme.text_primary + 99};
+  color: ${({ theme }) => theme.text_primary || "#fff"};
   margin-bottom: 10px;
   @media only screen and (max-width: 768px) {
     font-size: 12px;
   }
+  
+  ul {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
 `;
+
 const Skills = styled.div`
   width: 100%;
   display: flex;
   gap: 12px;
   margin-top: -10px;
 `;
-const Span = styled.div`
-  display: -webkit-box;
-  max-width: 100%;
-`;
 
 const Skill = styled.div`
   font-size: 15px;
   font-weight: 400;
-  color: ${({ theme }) => theme.text_primary + 99};
+  color: ${({ theme }) => theme.text_primary || "#fff"};
   @media only screen and (max-width: 768px) {
     font-size: 12px;
   }
@@ -89,15 +95,24 @@ const ItemWrapper = styled.div`
 `;
 
 const ExperienceCard = ({ experience }) => {
+  if (!experience) {
+    return null; // or return a default component or message
+  }
+
+  // Split description into points
+  const descriptionPoints = experience.desc
+    ? experience.desc.split('. ').filter(point => point.trim() !== '')
+    : [];
+
   return (
     <VerticalTimelineElement
       icon={
         <img
           width="100%"
           height="100%"
-          alt={experience?.company}
+          alt={experience.company || "Company"}
           style={{ borderRadius: "50%", objectFit: "cover" }}
-          src={experience?.img}
+          src={experience.img || ""}
         />
       }
       contentStyle={{
@@ -114,26 +129,32 @@ const ExperienceCard = ({ experience }) => {
       contentArrowStyle={{
         borderRight: "7px solid  rgba(255, 255, 255, 0.3)",
       }}
-      date={experience?.date}
+      date={experience.date || ""}
     >
       <Top>
-        <Image src={experience?.img} />
+        <Image src={experience.img || ""} />
         <Body>
-          <Role>{experience?.role}</Role>
-          <Company>{experience?.company}</Company>
-          <Date>{experience?.date}</Date>
+          <Role>{experience.role || "Role"}</Role>
+          <Company>{experience.company || "Company"}</Company>
+          <Date>{experience.date || "Date"}</Date>
         </Body>
       </Top>
       <Description>
-        {experience?.desc && <Span>{experience.desc}</Span>}
-        {experience?.skills && (
+        {descriptionPoints.length > 0 && (
+          <ul>
+            {descriptionPoints.map((point, index) => (
+              <li key={index}>{point}</li>
+            ))}
+          </ul>
+        )}
+        {experience.skills && (
           <>
             <br />
             <Skills>
               <b>Skills</b>
               <ItemWrapper>
-                {experience?.skills?.map((skill, index) => (
-                  <Skill>• {skill}</Skill>
+                {experience.skills.map((skill, index) => (
+                  <Skill key={index}>• {skill}</Skill>
                 ))}
               </ItemWrapper>
             </Skills>
