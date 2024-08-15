@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { darkTheme } from "./utils/Themes";
 import Navbar from "./components/Navbar";
@@ -10,6 +11,7 @@ import StartCanvas from "./components/canvas/Stars";
 import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
+import { Helmet } from "react-helmet";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -35,9 +37,22 @@ const Wrapper = styled.div`
 `;
 
 function App() {
+  useEffect(() => {
+    // Initialize Google Analytics
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      window.dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-M8KTSFJJ5R');
+  }, []);
+
   return (
     <ThemeProvider theme={darkTheme}>
       <BrowserRouter>
+        <Helmet>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8KTSFJJ5R"></script>
+        </Helmet>
         <Navbar />
         <Body>
           <StartCanvas />
@@ -47,12 +62,12 @@ function App() {
               <Skills />
               <Experience />
             </Wrapper>
-            <Projects/>
+            <Projects />
             <Wrapper>
               <Education />
-              <Contact/>
+              <Contact />
             </Wrapper>
-            <Footer/>
+            <Footer />
           </div>
         </Body>
       </BrowserRouter>
