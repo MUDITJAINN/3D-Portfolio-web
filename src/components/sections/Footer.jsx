@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Bio } from "../../data/constants";
 import {
   // FacebookRounded,
-  // Instagram,
   LinkedIn,
   Twitter,
 } from "@mui/icons-material";
@@ -102,9 +101,9 @@ const Footer = () => {
           <SocialMediaIcon href={Bio.linkedin} target="display">
             <LinkedIn />
           </SocialMediaIcon>
-          {/* <SocialMediaIcon href={Bio.insta} target="display">
-            <Instagram />
-          </SocialMediaIcon> */}
+           {/* <SocialMediaIcon href={Bio.buymeacoffee} target="display">
+            <LinkedIn />
+          </SocialMediaIcon>  */}
         </SocialMediaIcons>
         <Copyright>&copy; 2024 Mudit Jain. All rights reserved.</Copyright>
       </FooterWrapper>
