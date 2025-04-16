@@ -1,8 +1,8 @@
 export const Bio = {
   name: "Mudit Jain",
   roles: [
-    "Full Stack Developer",
     "Front-End Developer",
+    "Full Stack Developer",
     "UI/UX Designer",
     "Programmer",
   ],
@@ -223,7 +223,7 @@ export const experiences = [
     img: "https://www.techatplay.ai/assets/images/logo.png",
     role: "React Intern",
     company: "Tech At Play",
-    date: "November 2024 - February 2024",
+    date: "November 2024 - February 2025",
     desc: "Engineered a responsive website using React, ensuring seamless performance and an intuitive user experience.  Integrated a Node.js backend with Express, leveraging the YouTube V3 Stream API for live streaming.  Added various responsive web pages with React, focusing on modern design and cross-device compatibility.",
     skills: [
       "React",
@@ -288,7 +288,7 @@ export const education = [
     id: 1,
     img: "https://d3bat55ebwjhsf.cloudfront.net/schools/logos/user_generic_school_user/289845c6-e593-4388-95a5-f14337568b0d-065ab038-4b_0dBVPKu.webp",
     school: "Siddhartha Public School,Delhi",
-    date: "Apr 2019 - Apr 2021",
+    date: "Apr 2020 - Apr 2021",
     grade: "82.2%",
     desc: "I completed my class 12 high school education at Siddhartha Public School, Delhi, where I studied Science with Computer Science.",
     degree: "CBSE(XII), Science with Computer",
@@ -297,7 +297,7 @@ export const education = [
     id: 2,
     img: "https://www.cjcsbaraut.com/img/web-logo.png",
     school: "Christu Jyothi Convent SR SEC School, Baraut",
-    date: "Apr 2007 - Apr 2019",
+    date: "Apr 2018 - Apr 2019",
     grade: "84.8%",
     desc: "I completed my class 10 education at Christu Jyothi Convent SR SEC School, Baraut, where I studied Science with Computer Application.",
     degree: "ICSC(X), Science with Computer",
