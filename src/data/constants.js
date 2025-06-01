@@ -9,7 +9,7 @@ export const Bio = {
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/MUDITJAINN",
-  resume:"https://drive.google.com/file/d/1vxf5IZqkufj6ZvHINWMdJHXjRadeTXCc/view?usp=sharing",
+  resume:"https://drive.google.com/file/d/1Or2_MmCWb5jQEMI26DTahZMtpWtzZp61/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/muditjainn/",
   twitter: "https://x.com/mudit_jain___",
   insta: "",
@@ -97,6 +97,11 @@ export const skills = [
       {
         name: "Firebase",
         image: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
+      },
+      {
+        name: "Java",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
       },
     ],
   },
@@ -198,16 +203,16 @@ export const skills = [
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
       },
-      // {
-      //   name: "Postman",
-      //   image:
-      //     "https://static-00.iconduck.com/assets.00/postman-icon-497x512-beb7sy75.png",
-      // },
-      // {
-      //   name: "Adobe XD",
-      //   image:
-      //     "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOMAAADeCAMAAAD4tEcNAAAAwFBMVEVHATf/Yfb/////ZPw+ACyeM5P/Zf83ACRFADU5ACb/YvnOSsVDADJCADE/AC40ACBLBzzERbqoOZ6PLoQwABrVTcv1XOzcUNIvABne1tycM5G1PqrxWujBRLdKADrrV+FcEU6FJ3loQF1zT2l5IWytOqKIKXxsGl+PeIhjOFctABTa0NeBYXizoa7LvsdRFUJxHWRfE1GmkKBbKk6bhZVhMFSFa31UHkatm6jNwsrn4OVUC0UoAA58I3B4Vm5mPVt1W6ZRAAALx0lEQVR4nO1da0PawBINyRqyMckKBBARUfCBtgWltrZyuf3//+omIArJmSRAHrA350O/FGFOZnd2nhtFjcG38XQ0/DU5Uw4PZ5Ofg9+vP77FUVAi+U0HTHDmWEbRdAgYls244I+vkTxpjp0RE8wqmkUiWJ4mRp2tOY4fBSta9K3A3MF4K47jN3EcGlyHJd4wS8Sx8ygOdQNGwxKPaMUCjqOn49PhCtbTKAHHb5Pj2odBsEnIxgY5Tp+Oc5l+wXiaRnP8LooWMQWI71EcB7xo+VIBe6Q5Ph73VvzCJklFRooBkmsch/JQ9EgOEMfvcuzFFfj3MMc/MljUdYgfQY7fnoqWKXW4nQDHyfH6bxSMs02Or3JtxiXYaJ1j57xoeTLBeWeN4z+7aHEygfX4xXEsm01dQYw/Ob7JZ3CWsN5WHP/KqsYPRfoch3LuRh/2cMnxXV41eop8X3B8lckXD4K9Ljgqx57diIJh+Bw7btFyZArR8Tj+kXmpeot16nEcyHo4LmENPI5O0VJkDEdVOjKfHD5ERxnLGFWtg4+Vqdwmxzc6ykj6/ThShnKbVc+wDpWfMns5PoxfyqRoGTLHRDnEppR0IT/DEiVKlCjx/w3DAShaqHRhzBoAcvnb/FTXQtAvpNJk9dSshKCdSBUAlxzlQMlxLxgYKXzzlsiOo6WcQfCEBxOHT2gXg58ZR+tBh9AuXxKRrLbDclUqZncHybLTI++Db/a/vJ8kw+40dPTH+s0OtevsONrPUEpPzucEcvJL9ITM010qEBnaHHGqQY5mM15QdgEfkHm2i8nK0q5e4cVa0eJ3JGvBFVDfqciS5fnI63i1xq84XkdLwEy0k8PI1AfAm8rTxyxakYaF/+x2t2aZTDk6c0KRtWiF8C5So7aTwVGy9uXcJnF+XEcpktrIVzv6SNlytGZY2ugdWe0hNeo7C5WxT45XnSdwhGk1ZmkaHCX7uEO0oCajzkh8ribyHDCy5sjusdnRHiiRrRdocGLMVBQyjx9FGyuyTbVpEX+wR+da5hytF6xIfY7DJPsWfX53g6PkkQeoYrNjXmK/TKBwxezv05yfPUfCaSFU48D9q5O7NwlyyOcwHApWKjbYYgK5f/sYHCWfnJWLo2WtWw19lIip9rswIg+O9gN2BIBH56CYSr/YT5xcco+ihs3OafD8gDHVHh7OErlwNBSox1CwZBhoUe9kcAzbYYxxD4yd55JDZic4dRHQEDxmtN6WarQZr1Zn88bFXbfbq/XuThrIq0g/Tw5PveBOM3CUgswvBYMJ+7le65v6shxnmot/wbemz9GB3osHZ40A3LZ6I7EsHsFZvV3RPWb4x7Ll6AUTseeHdQ2eg9lOOihrVa9O+jrUWU4cqWh57fyAjyFBDm/5/eK6ZiYmmA1Hhd/h8+MzkLTQKar1wn4CQvW6puNDOE+OCsfR8mfsK2DuJ1FC1WFdbTuGGXEkomWzvVSk9QD+O5nBEfPWtgyzqrG6OPj9CCRRaLziHwmL1/Qt9mG2HHES48MRgBUgPTJFuYQz62+vxMw4UtHyYkEiJaPAJAj2UNlBidlxNBz4a+algLvRbLFYD4fPk5z3OXKkomW94SCjqt/HFsb5DeE+FceRcFvNSxecjXTm7hNsvtNWzJajjQ4IvwIOXJzomogPh4i9i+VIRcvAPYg3OMYV9iqK5mhcJRTBbMV6OES8VjhHKloOQb+JMzjVbuQ3eYHjqlsGLp0se8mIJF1QwmacwSEj0iVBs987uX2ZGVfXtxfdy5w5Rsr2JUFMNZ2uw/sM9f7FzOXMtvzOLNv5T+49gUS0vCnAXdxuJEI1H3r/Vmx4D/n3PeIS6qYiiFrI2pdY1IMyKw0RyOMV0NsZoYKVJoia1tp3EPXpit5WQrIX0b/KYs61+EYs8gjSe+Ca2yI4OjFepjmL88UZsRT0O2SOC+lDPsfR8urX4zvGBKHFLlwAhXAkouXVr8eeG8RC0Jo4T1lMP7mgTIYPsxlXNCaOnxZRwiuIYy1qser3MT9vb/dnhXC0nyNPjzh/3IZLle4ZKISjS/thy9+Pjqs47jUj85RFcOSxsUd0BYAIqsj6VgEciRLcOqITqwIu1Sap+wI4ugmc8qgEOcyoR8mcP0eqcTcAurLqNLbsGcyfY0Tgty4CXSHHjpxONw3kzjE+6viQ+YEyO7wHHxLtOOTN0YqPHpegzQ4U2U+2U8ibI64yIpCdR1X0FVFNPDlzZNhFwSwJs1NFUcshcUTh8SXRD0F0AsIm3sPhiJuMLohZBw0fB4fNEceNLU618fZhkhXux0qLTsjmyhFWy/UTZjBE0f8vFIBAkSv6YegRlh8XgRRZIUCzgBwGn/o16RjlyNGAoe3yiCCcHzhiRUxj0RXZHDkKFPZ9nN24jdzv/gxLzuDgoNYjA+v8OOJu5FVBnEjVmf2w5NgnjzCs+XEkhho+JKOml8HoKo6tIurOuXHE3fBfZUaq1KOFE8oO5lgvOteB263X+hqoUg8oDLhwWJk+IfPiiBsB1gNbwhEAFWV8QNK5g5w44u22oSPDgBS9AzSYqMGGlU5Z5sQRp9I2Jz0pR0DrBmQnjI73QWxa8+GIs43BE56YBw1bTI43pHeaQrnzme84w4dfoHhDDWaFOq6wN+fjBTk7+czpQCMR7qOmOm6CnXN4RtJ/GpUHsCfz4EhkG83QLDzlCJgtZ/OjxOnhfdJshN8ImwdHOO8XNiUKne0JFkAIy+pDb76IwILNgSOVbQTVQjgbsJBoswAS1ZJm6s17u8q+kkEGTMynypGY7MCuF+XRBTORZF/HkmWlWZ9f83PXdc+5czVH2zxVjsR9Fi14lpHNO0EnhsgcfNJcjFm1Wq1KHvNWRO2eyp7ieyx8bGYiiYHX5KBd+O2Bm3HITiriKA0XQIhJiiI4krMAVGaC7qDaHPU0ZntR9Ex1WhzhLJwfGpPTcNSofSjQxyn3LTim9XIO4mIKfU5X0mhFBrawuNuHpFlLiSPhgUaWwqnh5Urozg4XN6cn5EjX1rcDx98fdXtOhCJDBRDR3J1kolmuBIDZxthrG3AedvFsgpd2uac7L9e9J/KXoNri4hriyFJzWC4R3TgfxTG2DzgRtrjDYhOkExPORIr7XQeuWmnc+bzVXSSbf0mHFaECCHvp76RKs5XC+UjZxyQOBr4KsQILIJZbr2xtejStveOFfBsgDE6i58dOKKlRAYQr240ja3qrex1srN8FxPhYhBe3ITbVcm5egkdk8LNuK9nArukR7N26LJVb5nlfMwGS3TDrXzEbvhr+4354tA4Mzm9OTT3a/nj8tHb3mfG03rHq9GoIvQQjxj7YS6MOcfJMfIFd5Te1Sx1Fi/6z1fVW827OBEvzJbKLi13CSHrBiOXfDYMQ8Ywczq8b3XbLHydbqd0PkfvtWn1+nTK/4mA4XLjs5famcVE/uWjcz59froQQnG1ze8tRwLJtx1sHjuPY9n53YZUoUaJEiRIlSpQoUaJEiRIlSpQoUSJnyP/m+TPlrWgRMsdE+Sl7atb4pfxXrncoh2ENlZFUr1AGcEbKVKrX0gKwqTJOq93sUMHHyns6bUqHC/GuqLKvVUdV1IEcRVkK1sDjKLnRYX88jp3YK5mPGm7H46ju9I7bY4FxpfocpV6sbLrgKPXpId4XHNWhvJbVHqpLjn/lVaT4+8FR/SVr7GH9VFccx7IqcqHGJUdZfR17oH5xfE/68qnjgvu+xlF9lTHC4q/qOkd1Ip/Zsd7UTY4Seq2ep7rJUf0hm20VP9QgR/W3XFuS/1bDHNWhTL45G6qIo/pPHpLsp4o5ykOS/VMpjupQjj3JhyrNUf0tg3UVv9UojuoP99idAePpjxrNUe1Mjnu9srNOkFKIo+e7Ph1vFGI9jcKEAEe1MwjfXXMUsMTjN8AHcfSC5rcjZGmJtzFkgzl6LAdu/FsbDwgGcweYIc3RW7GvTKQzQpk5LE/S15CpScDRpzkd2IIz52DHuQzLYVzYgylNMI6jj/fxdDR8mxxii8vZ5G04mo4j+fn4H9TX0xylYU8/AAAAAElFTkSuQmCC",
-      // },
+      {
+        name: "Postman",
+        image:
+          "https://static-00.iconduck.com/assets.00/postman-icon-497x512-beb7sy75.png",
+      },
+      {
+        name: "Adobe XD",
+        image:
+          "data:image/png;base64,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",
+      },
       {
         name: "Figma",
         image:
@@ -223,7 +228,7 @@ export const experiences = [
     img: "https://www.techatplay.ai/assets/images/logo.png",
     role: "React Intern",
     company: "Tech At Play",
-    date: "November 2024 - February 2025",
+    date: "November 2024 - March 2025",
     desc: "Engineered a responsive website using React, ensuring seamless performance and an intuitive user experience.  Integrated a Node.js backend with Express, leveraging the YouTube V3 Stream API for live streaming.  Added various responsive web pages with React, focusing on modern design and cross-device compatibility.",
     skills: [
       "React",
@@ -280,7 +285,7 @@ export const education = [
     img: "https://upload.wikimedia.org/wikipedia/commons/2/2e/DIT_University_Dehradun_Logo.jpg",
     school: "Dheradun Institute Of Technology, Dheradun",
     date: "Aug 2021 - Aug 2025",
-    grade: "8.29 CGPA",
+    grade: "8.27 CGPA",
     desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Dheradun Institute Of Technology, Dheradun. I have completed 7 semesters and have a CGPA of 8.29. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the IEEE at DIT, where I am learning and working on exciting projects with a team of talented developers.",
     degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
   },
@@ -289,7 +294,7 @@ export const education = [
     img: "https://d3bat55ebwjhsf.cloudfront.net/schools/logos/user_generic_school_user/289845c6-e593-4388-95a5-f14337568b0d-065ab038-4b_0dBVPKu.webp",
     school: "Siddhartha Public School,Delhi",
     date: "Apr 2020 - Apr 2021",
-    grade: "82.2%",
+    grade: "81.2%",
     desc: "I completed my class 12 high school education at Siddhartha Public School, Delhi, where I studied Science with Computer Science.",
     degree: "CBSE(XII), Science with Computer",
   },
