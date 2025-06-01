@@ -375,7 +375,33 @@ export const projects = [
     tags: ["React","Three.js","EmailJS","GithubPages"],
     category: "web app",
     github: "https://github.com/MUDITJAINN/3D-Portfolio-web",
-    webapp: "",
+    webapp: "https://muditt-portfolio.netlify.app/",
+  },
+  {
+    id: 7,
+    title: " URL Shortener ",
+    date: "March 2025 - June 2025",
+    description:
+      " • Utilized Express.js, MongoDB, and React to develop a URL shortener with QR code generation, enhancing usability.• Leveraged responsive design and API integration to ensure smooth user experience across devices.• Received positive feedback for efficient link management and quick redirection during user testing",
+    image:
+      "",
+    tags: ["React","Node","Express","MongoDB"],
+    category: "web app",
+    github: "https://github.com/MUDITJAINN/Url-Shortner",
+    webapp: "https://url-shortner-jarw.onrender.com/",
+  },
+  {
+    id: 7,
+    title: "ONLINE COURSE SELLING PLATFORM",
+    date: "March 2025 - June 2025",
+    description:
+      " • Engineered a secure MERN stack platform with user auth, admin-only controls, and full CRUD for courses.• Implemented image uploads using Cloudinary and secured access with JWT-protected routes.• Deployed to Netlify and Render with dynamic routing, responsive design, and real-time feedback.",
+    image:
+      "data:image/png;base64,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",
+    tags: ["Node","Express","MongoDB","React"],
+    category: "web app",
+    github: "https://github.com/MUDITJAINN/Course-Backend",
+    webapp: "https://course-frontend-mu.vercel.app/",
   },
   {
     id: 7,
@@ -388,7 +414,7 @@ export const projects = [
     tags: ["HTML","CSS","JAVASCRIPT"],
     category: "web app",
     github: "https://github.com/MUDITJAINN/Netflix-clone",
-    webapp: "",
+    webapp: "https://muditjainn.github.io/Netflix-clone/",
   },
 ];
 
