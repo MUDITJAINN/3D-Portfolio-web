@@ -6,6 +6,7 @@ import {
   LinkedIn,
   X,
   CurrencyRupeeSharp,
+  PersonAddAlt1,
 } from "@mui/icons-material";
 
 const FooterContainer = styled.div`
@@ -102,6 +103,14 @@ const Footer = () => {
           <SocialMediaIcon href={Bio.linkedin} target="display">
             <LinkedIn />
           </SocialMediaIcon>
+          <SocialMediaIcon
+              href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=muditjainn"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Follow on LinkedIn"
+            >
+              <PersonAddAlt1 />
+            </SocialMediaIcon>
            <SocialMediaIcon href={Bio.buymeacoffee} target="display">
             <CurrencyRupeeSharp />
           </SocialMediaIcon> 

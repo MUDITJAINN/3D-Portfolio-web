@@ -11,6 +11,7 @@ export const Bio = {
   github: "https://github.com/MUDITJAINN",
   resume:"https://drive.google.com/file/d/1Or2_MmCWb5jQEMI26DTahZMtpWtzZp61/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/muditjainn/",
+  followlinkdin:"Follow me on LinkedIn: www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=muditjainn",
   twitter: "https://x.com/mudit_jain___",
   insta: "",
   facebook: "",
