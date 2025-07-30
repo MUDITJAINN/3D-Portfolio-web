@@ -9,7 +9,7 @@ export const Bio = {
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/MUDITJAINN",
-  resume:"https://drive.google.com/file/d/1Or2_MmCWb5jQEMI26DTahZMtpWtzZp61/view?usp=sharing",
+  resume:"https://drive.google.com/file/d/1JCWRpNtfxrxiQuI31lxAUrQ307bhxKtN/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/muditjainn/",
   followlinkdin:"Follow me on LinkedIn: www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=muditjainn",
   twitter: "https://x.com/mudit_jain___",
@@ -287,7 +287,7 @@ export const education = [
     school: "Dheradun Institute Of Technology, Dheradun",
     date: "Aug 2021 - Aug 2025",
     grade: "8.27 CGPA",
-    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Dheradun Institute Of Technology, Dheradun. I have completed 7 semesters and have a CGPA of 8.29. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the IEEE at DIT, where I am learning and working on exciting projects with a team of talented developers.",
+    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Dheradun Institute Of Technology, Dheradun. I have completed 8 semesters and have a CGPA of 8.27. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the IEEE at DIT, where I am learning and working on exciting projects with a team of talented developers.",
     degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
   },
   {
