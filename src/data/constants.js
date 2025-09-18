@@ -9,7 +9,7 @@ export const Bio = {
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/MUDITJAINN",
-  resume:"https://drive.google.com/file/d/1JCWRpNtfxrxiQuI31lxAUrQ307bhxKtN/view?usp=sharing",
+  resume:"https://drive.google.com/drive/folders/1M4aiLnuF27-UkinysBHn_3ViW1Hc8F5f?usp=sharing",
   linkedin: "https://www.linkedin.com/in/muditjainn/",
   followlinkdin:"Follow me on LinkedIn: www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=muditjainn",
   twitter: "https://x.com/mudit_jain___",
@@ -225,7 +225,23 @@ export const skills = [
 
 export const experiences = [
   {
-    id: 3,
+    id: 1,
+    img: "https://tpmguru.com/images/tpmguru-logo.png",
+    role: "Software Developer",
+    company: "TPMGuru (Deputed to Indian Institute of Remote Sensing – IIRS, ISRO)",
+    date: "June 2025 - Present",
+    desc: " Developed a responsive dashboard for IIRS research publications using Next.js, Tailwind CSS, Prisma, MySQL. Implemented advanced search filters, interactive citation graphs, expandable author lists, and CSV export support. Refactored and optimized code for performance; deployed live on: iirs.gov.in/research-publications. Maintaining and updating the official CSSTEAP and IIRS websites for content and usability improvements. Also building a responsive, sharable survey form application for streamlined feedback and reporting.",
+    skills: [
+      "NextJS",
+      "TailwindCSS",
+      "MySQl",
+      "Prisma",
+      "Linux",
+    ],
+    doc: "",
+  },
+  {
+    id: 2,
     img: "https://www.techatplay.ai/assets/images/logo.png",
     role: "React Intern",
     company: "Tech At Play",
