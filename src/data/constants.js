@@ -57,6 +57,10 @@ export const skills = [
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
       },
+      {
+      name: "TypeScript",
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Typescript.svg/800px-Typescript.svg.png",
+      },
       // {
       //   name: "Bootstrap",
       //   image:
@@ -106,36 +110,36 @@ export const skills = [
       },
     ],
   },
-  // {
-  //   title: "DevOps",
-  //   skills: [
-  //     {
-  //       name: "AWS",
-  //       image:
-  //         "https://download.logo.wine/logo/Amazon_Web_Services/Amazon_Web_Services-Logo.wine.png",
-  //     },
+  {
+    title: "DevOps",
+    skills: [
+      {
+        name: "AWS",
+        image:
+          "https://download.logo.wine/logo/Amazon_Web_Services/Amazon_Web_Services-Logo.wine.png",
+      },
   //     {
   //       name: "Google Cloud",
   //       image:
   //         "https://static-00.iconduck.com/assets.00/google-cloud-platform-logo-icon-2048x1824-pg4wzspq.png",
   //     },
-  //     {
-  //       name: "Docker",
-  //       image:
-  //         "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
-  //     },
-  //     {
-  //       name: "Jenkins",
-  //       image:
-  //         "https://toppng.com/uploads/preview/jenkins-logo-11609365847mufysaivph.png",
-  //     },
+      {
+        name: "Docker",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
+      },
+      {
+        name: "Jenkins",
+        image:
+          "https://toppng.com/uploads/preview/jenkins-logo-11609365847mufysaivph.png",
+      },
   //     {
   //       name: "Kubernetes",
   //       image:
   //         "https://upload.wikimedia.org/wikipedia/commons/0/00/Kubernetes_%28container_engine%29.png",
   //     },
-  //   ],
-  // },
+    ],
+  },
   // {
   //   title: "Android",
   //   skills: [
