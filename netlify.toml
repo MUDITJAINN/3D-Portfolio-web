@@ -1,0 +1,13 @@
+# Netlify deployment (Create React App)
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# SPA: React Router / hash links
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

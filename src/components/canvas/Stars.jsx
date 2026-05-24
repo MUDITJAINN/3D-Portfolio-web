@@ -1,8 +1,15 @@
+/**
+ * Stars.jsx — Background starfield (React Three Fiber)
+ * -------------------------
+ * useFrame runs every animation frame; we skip work when the tab is hidden
+ * (see three/performance.js + hooks/usePerformance.js in App).
+ */
 import React, { useRef, useState, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
 import styled from "styled-components";
+import { shouldRunAnimation, getCanvasDpr } from "../../three/performance";
 
 const StyledCanvasWrapper = styled.div`
   width: 100%;
@@ -18,6 +25,7 @@ const Stars = (props) => {
   );
 
   useFrame((state, delta) => {
+    if (!ref.current || !shouldRunAnimation()) return;
     ref.current.rotation.x -= delta / 10;
     ref.current.rotation.y -= delta / 15;
   });
@@ -40,7 +48,7 @@ const Stars = (props) => {
 const StyledStarsCanvas = () => {
   return (
     <StyledCanvasWrapper>
-      <Canvas camera={{ position: [0, 0, 1] }}>
+      <Canvas camera={{ position: [0, 0, 1] }} dpr={getCanvasDpr()}>
         <Suspense fallback={null}>
           <Stars />
         </Suspense>

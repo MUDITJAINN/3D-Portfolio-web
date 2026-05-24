@@ -1,0 +1,8 @@
+services:
+  portfolio:
+    build: .
+    ports:
+      - "8080:80"
+    # Uncomment to pass build-time env into CRA (requires ARG in Dockerfile for each key)
+    # environment:
+    #   - REACT_APP_ASSISTANT_ENABLED=true

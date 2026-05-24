@@ -1,6 +1,20 @@
 Welcome to the repository for my 3D portfolio website!
 
-This project showcases my skills in web development, particularly in creating interactive and visually engaging experiences using modern technologies. 
+This project showcases my skills in web development, particularly in creating interactive and visually engaging experiences using modern technologies.
+
+### Modular architecture (Phase 1)
+
+The codebase is being refactored into small, teachable modules for an **AI-guided tour assistant** (local answers by default, optional Grok API).
+
+- **[Architecture overview](docs/ARCHITECTURE.md)** — how modules connect
+- **[Module-by-module guide](docs/MODULES.md)** — what each file does and why
+
+Quick start with the assistant:
+
+1. Copy `.env.example` → `.env`
+2. `npm start` — click the **?** button (bottom-right) to open the guide
+3. Optional: set `REACT_APP_GROK_API_KEY` for custom questions
+
 #### Features:
 
 1. **3D Visualizations:**
@@ -42,11 +56,24 @@ To run this project locally, follow these steps:
    npm install
    ```
 
-3. **Start the development server:**
+3. **Configure environment (optional):**
+   ```bash
+   cp .env.example .env
+   ```
+
+4. **Start the development server:**
    ```bash
    npm start
    ```
    The website will be available at `http://localhost:3000`.
+
+#### Docker
+
+```bash
+docker compose up --build
+```
+
+Open `http://localhost:8080`.
 
 #### Deployment:
 

@@ -1,3 +1,9 @@
+/**
+ * App.js — Root layout
+ * -------------------------
+ * Portfolio sections stay here; assistant/tour mount as siblings so
+ * they do not couple to Hero or Projects internals.
+ */
 import React, { useEffect } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { darkTheme } from "./utils/Themes";
@@ -12,6 +18,10 @@ import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
 import { Helmet } from "react-helmet";
+import AssistantUI from "./components/AssistantUI";
+import RobotController from "./robot/RobotController";
+import usePerformance from "./hooks/usePerformance";
+import env from "./config/environment";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -37,21 +47,29 @@ const Wrapper = styled.div`
 `;
 
 function App() {
+  // Pause Three.js animations when user switches tabs (saves GPU/battery)
+  usePerformance();
+
+  // Google Analytics 4 (gtag) — loads script via Helmet below
   useEffect(() => {
-    // Initialize Google Analytics
     window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      window.dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-M8KTSFJJ5R');
+    window.gtag =
+      window.gtag ||
+      function gtag() {
+        window.dataLayer.push(arguments);
+      };
+    window.gtag("js", new Date());
+    window.gtag("config", env.gaMeasurementId);
   }, []);
 
   return (
     <ThemeProvider theme={darkTheme}>
       <BrowserRouter>
         <Helmet>
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8KTSFJJ5R"></script>
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${env.gaMeasurementId}`}
+          ></script>
         </Helmet>
         <Navbar />
         <Body>
@@ -69,6 +87,8 @@ function App() {
             </Wrapper>
             <Footer />
           </div>
+          <AssistantUI />
+          <RobotController />
         </Body>
       </BrowserRouter>
     </ThemeProvider>
